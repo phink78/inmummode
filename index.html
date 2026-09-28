@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mum Mode — The 7-Day Evening Reset</title>
+<meta name="description" content="A free seven-night guide to the last three hours of the day. From Mum Mode, an AI-generated host.">
+<meta property="og:title" content="The 7-Day Evening Reset — Mum Mode">
+<meta property="og:description" content="Seven nights. Four minutes each. A structure for the last three hours of the day.">
+<meta property="og:image" content="https://inmummode.com/wren.jpg">
+<meta property="og:url" content="https://inmummode.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://inmummode.com/">
+<style>
+  :root{
+    --oat:#F3EFE7; --clay:#D9CFC1; --pine:#3E4A42; --tan:#B8A08A; --ink:#2B2B2A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--oat); color:var(--ink);
+    font:400 17px/1.65 ui-serif,Georgia,'Iowan Old Style','Times New Roman',serif;
+    padding:0 22px 72px;
+  }
+  .wrap{max-width:600px;margin:0 auto}
+  header{padding:38px 0 0}
+  .mark{
+    font:600 12px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--pine);
+  }
+  h1{
+    font-size:clamp(31px,7.5vw,44px);line-height:1.12;font-weight:500;
+    margin:26px 0 18px;letter-spacing:-.015em;
+  }
+  .lede{font-size:19px;color:#4a4a47;margin-bottom:30px}
+  figure{margin:0 0 30px}
+  img{width:100%;height:auto;display:block;border-radius:3px}
+  figcaption{
+    font:400 13px/1.5 ui-sans-serif,system-ui,sans-serif;
+    color:#6a6a66;margin-top:9px;
+  }
+  h2{
+    font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--pine);
+    margin:40px 0 16px;
+  }
+  p{margin-bottom:16px}
+  ul{list-style:none;margin:0 0 16px}
+  li{padding-left:22px;position:relative;margin-bottom:11px}
+  li::before{
+    content:"";position:absolute;left:0;top:11px;
+    width:9px;height:1px;background:var(--tan);
+  }
+  form{
+    background:#fff;border:1px solid var(--clay);border-radius:4px;
+    padding:26px;margin:34px 0 10px;
+  }
+  label{
+    display:block;font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--pine);margin-bottom:10px;
+  }
+  input[type=email]{
+    width:100%;padding:14px 15px;font-size:17px;font-family:inherit;
+    border:1px solid var(--clay);border-radius:3px;background:var(--oat);color:var(--ink);
+  }
+  input[type=email]:focus{outline:2px solid var(--pine);outline-offset:1px}
+  button{
+    width:100%;margin-top:12px;padding:15px;cursor:pointer;
+    font:600 15px/1 ui-sans-serif,system-ui,sans-serif;
+    background:var(--pine);color:var(--oat);border:0;border-radius:3px;
+  }
+  button:hover{background:#2f3a33}
+  button[disabled]{opacity:.55;cursor:default}
+  .fine{
+    font:400 13px/1.55 ui-sans-serif,system-ui,sans-serif;
+    color:#6a6a66;margin-top:12px;
+  }
+  .msg{
+    font:400 15px/1.5 ui-sans-serif,system-ui,sans-serif;
+    margin-top:14px;color:var(--pine);
+  }
+  .disclosure{
+    border-top:1px solid var(--clay);margin-top:46px;padding-top:22px;
+    font:400 14px/1.6 ui-sans-serif,system-ui,sans-serif;color:#6a6a66;
+  }
+  .disclosure strong{color:var(--ink);font-weight:600}
+  .hide{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">Mum Mode</div>
+    <h1>The last three hours of the day, written down.</h1>
+    <p class="lede">A free seven-night guide. Four minutes an evening. The first two nights you change nothing at all — you only watch, because almost everyone fixes the wrong hour.</p>
+    <p class="lede">And it's written to you, not to the mother of someone. Everyone else in your week is already talking to the role.</p>
+  </header>
+
+  <figure>
+    <img src="wren.jpg" alt="Wren, the host of Mum Mode, photographed against a plain wall in soft daylight." width="675" height="900">
+    <figcaption>Wren — the host of Mum Mode.</figcaption>
+  </figure>
+
+  <h2>What's in it</h2>
+  <ul>
+    <li>Two nights of recording the evening exactly as it happens, so you can find the real pinch point instead of the loudest one.</li>
+    <li>One decision moved to the morning, where it costs you almost nothing.</li>
+    <li>One thing removed entirely — subtraction, not substitution.</li>
+    <li>Five sentences for the handover, when there's another adult and it keeps turning into a negotiation.</li>
+    <li>A twenty-minute reset for the evenings that have already gone.</li>
+    <li>A two-line nightly log. It takes longer to read this sentence than to fill it in.</li>
+  </ul>
+
+  <form id="f" novalidate>
+    <label for="email">Where should I send it?</label>
+    <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" inputmode="email">
+    <button type="submit" id="btn">Send me the reset</button>
+    <p class="fine">One email with the guide. A short note each week after that, and an unsubscribe link in every one. Nothing else, and your address goes nowhere else.</p>
+    <p class="msg hide" id="msg" role="status"></p>
+  </form>
+
+  <h2>Where this comes from</h2>
+  <p>Timing, sequence, and the number of decisions you carry into the worst hour of the day. All of it drawn from published work on routine and decision load rather than from anyone's particular Tuesday — which is why it's a structure to test in your house, not a story about someone else's.</p>
+  <p>It is not therapy, and it is not medical, feeding or sleep advice. Nothing here tells you when your child should sleep or eat.</p>
+
+  <div class="disclosure">
+    <strong>Mum Mode is AI-generated.</strong> Wren is not a person and not a mum. Frameworks drawn from published work, not lived experience.<br>
+    Not therapy. Not medical advice. If you're struggling, please speak to your GP, your health visitor, or someone you trust.
+  </div>
+
+</div>
+
+<script>
+// MOCK — zet hier de echte Make-webhook of het formulier-endpoint neer
+const ENDPOINT = "https://hook.eu2.make.com/REPLACE_ME";
+
+const f = document.getElementById('f');
+const btn = document.getElementById('btn');
+const msg = document.getElementById('msg');
+
+function say(text){ msg.textContent = text; msg.classList.remove('hide'); }
+
+f.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('email').value.trim();
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    say('That address doesn’t look right — mind checking it?');
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  try {
+    await fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, source: 'evening-reset', ts: new Date().toISOString() })
+    });
+    f.querySelector('input').disabled = true;
+    btn.textContent = 'On its way';
+    say('Sent. Check your inbox in a minute — and your spam folder, because first emails often land there.');
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Send me the reset';
+    say('That didn’t go through. Try again in a moment?');
+  }
+});
+</script>
+</body>
+</html>

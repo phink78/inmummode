@@ -115,7 +115,7 @@
   <form id="f" novalidate>
     <label for="email">Where should I send it?</label>
     <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" inputmode="email">
-    <button type="submit" id="btn">Send me the reset</button>
+    <button type="submit" id="btn">Send me the 7-day guide</button>
     <p class="fine">One email with the guide. A short note each week after that, and an unsubscribe link in every one. Nothing else, and your address goes nowhere else.</p>
     <p class="msg hide" id="msg" role="status"></p>
   </form>
@@ -161,7 +161,7 @@ f.addEventListener('submit', async (e) => {
     say('Sent. Check your inbox in a minute — and your spam folder, because first emails often land there.');
   } catch (err) {
     btn.disabled = false;
-    btn.textContent = 'Send me the reset';
+    btn.textContent = 'Send me the 7-day guide';
     say('That didn’t go through. Try again in a moment?');
   }
 });
